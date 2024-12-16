@@ -82,7 +82,7 @@ ul li.checked::before{
     background-image: url(images/checked_recolored.png);
 }
 
-ul li span{
+/* ul li span{
     position:absolute;
     right:0;
     top:5px;
@@ -93,9 +93,36 @@ ul li span{
     line-height:40px;
     text-align:center;
     border-radius:50%;
+} */
+ul li span.delete{
+    position:absolute;
+    right: 10px;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    
+    color:#F5F5DC;
+    line-height:40px;
+    text-align:center;
+    border-radius:50px;
 }
 
-ul li span:hover{
+ul li span.edit{
+    position:absolute;
+    right:60px;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    color:#F5F5DC;
+    line-height:40px;
+    text-align:center;
+    border-radius:50%;
+}
+
+ul li .delete:hover,
+ul li .edit:hover{
     background-color:#E5E3D4;
     color:#9ABF80;
 }
